@@ -4,7 +4,6 @@ body {
 
 header {
     background-color:rgb(95, 173, 206);
-    text-align: center;
     padding: 4px;
 }
 
@@ -63,14 +62,13 @@ footer {
     justify-content: space-between;
 }
 /*---Projects---*/
-.layout {
+main figure {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding-bottom: 10em;
 }
 
-.layout figure {
+main figure {
     max-width: 500px;
     text-align: center;
 }
