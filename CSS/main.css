@@ -1,9 +1,14 @@
 /*--FONTS--*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-h1, h2, h3 {
+h1, h2, h3{
     font-family: "PT Serif", 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', serif;
     font-weight: 400;
+    font-style: normal;
+}
+p, figcaption{
+    font-family: "PT Serif", 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', serif;
+    font-weight: 250;
     font-style: normal;
 }
 
@@ -12,22 +17,31 @@ header{
     background-color: #ffc2c3;
 }
 
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+
+}
+
 header img{
     justify-self: flex-start;
 }
-header div{
-    display: flex;
-    justify-content: center;
-}
+
 header div h1{
     margin: 0;
 }
+
 header nav ul{ 
     display: flex;
     gap: 10px;
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    margin-top: 0;
     padding-left: 0;
     padding-bottom: 10px;
 }
@@ -65,6 +79,12 @@ img{
     align-items: center;
 }
 
+.heading{
+    background-color: #6e8cee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 /*--Footer configuration--*/
 footer{
@@ -78,6 +98,7 @@ footer{
 @media (max-width: 480px) {
     header nav ul{
         flex-direction: column;
+        padding-left: 10px;
     }
     
 }
