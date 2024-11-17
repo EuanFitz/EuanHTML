@@ -94,11 +94,14 @@ footer{
     font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
     font-weight: normal;
 }
+
+#footerYear{
+    padding-left: 5px;
+}
 /*--Responsive Configuration--*/
 @media (max-width: 480px) {
     header nav ul{
         flex-direction: column;
         padding-left: 10px;
     }
-    
 }
