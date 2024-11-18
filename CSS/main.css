@@ -55,6 +55,11 @@ padding: 5px;
 section h3{
     text-align: center;
 }
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .centerimg {
     display: flex;
     flex-direction: column;
