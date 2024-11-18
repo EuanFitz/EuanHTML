@@ -23,14 +23,6 @@ header div{
     align-items: center;
 }
 
-header h1{
-
-}
-
-header img{
-    justify-self: flex-start;
-}
-
 header div h1{
     margin: 0;
 }
@@ -84,7 +76,13 @@ img{
     padding: 10px;
     border-radius: 5px;
 }
-
+#greet{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(23, 185, 160, 0.516);
+    width: 15em;
+}
 
 /*--Footer configuration--*/
 footer{

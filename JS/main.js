@@ -9,7 +9,7 @@ console.log(d);
 const goodDayButton = document.getElementById("btn-alert");
 
 goodDayButton.addEventListener('mouseenter', () => 
-  goodDayButton.innerText = 'Come on!');
+    goodDayButton.innerText = 'Come On!');
 goodDayButton.addEventListener('mouseleave', () => 
     goodDayButton.innerText = 'Click me!');
 
@@ -29,9 +29,12 @@ const greetTime = document.getElementById("greet");
         greetTime.style.backgroundColor = '#030027';
         greetTime.style.color = 'white';
     }
-//Trying to understand for loop??
-const loopList = document.getElementById('numbers');
-for (let i = 1; i<12; i = i + 1){
-.createElement('li');
-
+    //Trying to understand for loop??
+ const loopList = document.getElementById('numbers');
+for (let i = 0; i<12; i++)  {
+    const li = document.createElement('li');
+    //When i = even the list number = odd 
+    // i devided by 2 has a remainder of 0 then the number is even but the list line is odd. 
+    li.textContent = i % 2 === 0 ? 'Odd' : 'Even';
+    loopList.appendChild(li);
 }
