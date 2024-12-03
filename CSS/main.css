@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 h1, h2, h3{
-    font-family: "PT Serif", 'Iowan Old Style', 'Palatino Linotype', serif;
+    font-family: 'Roboto','PT Serif', 'Iowan Old Style', serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -59,25 +59,18 @@ body{
 section h3{
     text-align: center;
 }
-main section{
+#HomepageContent{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.centerimg {
+figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 img{
     max-width: 400px;
-}
-.imgflow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
 }
 
 .heading{
@@ -86,13 +79,18 @@ img{
     border-radius: 5px;
 }
 #greet{
-    display: flex;
-    justify-content: center;
     text-align: center;
     background-color: rgba(23, 185, 160, 0.516);
     width: 15em;
 }
-
+/*--Resume--*/
+#resumebody{
+    text-align: left;
+}
+#reshead{
+    display: flex;
+    justify-content: space-between;
+}
 /*--Footer configuration--*/
 footer{
     display: flex;
@@ -110,5 +108,8 @@ footer{
     header nav ul{
         flex-direction: column;
         padding-left: 10px;
+    }
+    figure{
+        max-width: 100%;
     }
 }
