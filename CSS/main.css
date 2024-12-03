@@ -1,6 +1,8 @@
 /*--FONTS--*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quintessential&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 h1, h2, h3{
     font-family: 'Roboto','PT Serif', 'Iowan Old Style', serif;
     font-weight: 400;
@@ -12,10 +14,14 @@ p, figcaption{
     font-style: normal;
 }
 
+#quote{
+    font-family: "Quintessential", 'PT Serif', 'Iowan Old Style', serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /*--Header Configuration--*/
 header{
-    background-color: #CCD3D6;
-    border-bottom: 2px, black;
+    background-color: #94AE89;
 }
 
 header div{
@@ -44,7 +50,7 @@ header img{
     padding-top: 20px;
 }
 header nav ul a {
-    color: #5F5980;
+    color: black;
 }
 
 header nav ul a:hover {
@@ -54,7 +60,7 @@ padding: 5px;
 
 /*--Main content configuration--*/
 body{
-    background-color: #E7ECEF; 
+    background-color: #A8BCA1; 
 }
 section h3{
     text-align: center;
@@ -79,9 +85,11 @@ img{
     border-radius: 5px;
 }
 #greet{
+    margin-top: 5px;
+    border-radius: 10px;
     text-align: center;
     background-color: rgba(23, 185, 160, 0.516);
-    width: 15em;
+    width: 10em;
 }
 /*--Resume--*/
 #resumebody{
@@ -103,7 +111,7 @@ footer{
     display: flex;
     justify-content: center;
     background-color: #7D8491;
-    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-family: 'Bitstream Charter', 'Sitka Text', serif;
     font-weight: normal;
 }
 
@@ -114,7 +122,8 @@ footer{
 @media (max-width: 480px) {
     header nav ul{
         flex-direction: column;
-        padding-left: 10px;
+        padding-left: 20px;
+        list-style: disc;
     }
     figure{
         max-width: 85%;
