@@ -91,6 +91,13 @@ img{
     display: flex;
     justify-content: space-between;
 }
+/*--About--*/
+#aboutPhotos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 /*--Footer configuration--*/
 footer{
     display: flex;
