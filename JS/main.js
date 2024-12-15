@@ -1,4 +1,16 @@
+//header
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
 
 //Year for the footer
 const fYear = document.getElementById("footerYear");
@@ -29,12 +41,3 @@ const greetTime = document.getElementById("greet");
         greetTime.style.backgroundColor = '#030027';
         greetTime.style.color = 'white';
     }
-    //Trying to understand for loop??
- const loopList = document.getElementById('numbers');
-for (let i = 0; i<12; i++)  {
-    const li = document.createElement('li');
-    //When i = even the list number = odd 
-    // i devided by 2 has a remainder of 0 then the number is even but the list line is odd. 
-    li.textContent = i % 2 === 0 ? 'Odd' : 'Even';
-    loopList.appendChild(li);
-}
